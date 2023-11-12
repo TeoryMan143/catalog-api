@@ -15,11 +15,11 @@
   },
   "lint": {
     "include": ["src/"],
-    "exclude": ["drizzle.config.ts"]
+    "exclude": ["drizzle.config.ts", "drizzle/"]
   },
   "tasks": {
     "dev": "deno run -A --watch src/main.ts",
-    "migration:gen": "pnpm exec drizzle-kit introspect:mysql",
-    "migration:run": "pnpm exec drizzle-kit push:mysql"
+    "migration:gen": "pnpm exec drizzle-kit introspect:pg",
+    "migration:run": "pnpm exec drizzle-kit push:pg"
   }
 }

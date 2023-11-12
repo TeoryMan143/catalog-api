@@ -3,4 +3,3 @@ deno.lock
 .vscode
 pnpm-lock.yaml
 node_modules
-drizzle
